@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #fff;
+}
+
+/* CSS voor de eerste navigatiebar */
+.eerste-navigatiebar {
+    background-color: black;
+    position: sticky;
+}
+
+.eerste-navigatiebar ul { 
+    display: flex; /*Met display flex komen de items naast elkaar te staan. Tegen de ul wordt gezegd dat geflext moet worden */
+    justify-content: right; /*Hiermee wordt de content naar recht uitgelijnd*/
+    gap: 1em; /*Tussen de elementen is er een gap van 1em*/
+}
+
+.eerste-navigatiebar a {
+    color:#fff; 
+    line-height: 3em; 
+    font-size: 11px;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+.eerste-navigatiebar .svg-search { 
+    margin-top: .6em; /*De svg stond niet op de goede plaats. Hiermee is de svg op de goede plek gepositioneerd*/
+    margin-right: 1em;
+}
+
+/* CSS voor de logo, ondertitel, en doneerknop */
+.section-logo-boven {
+    display: grid;
+    grid-template-columns: 1.5fr 5fr .5fr;
+    grid-template-rows: 1fr 1fr;
+    /* @media only screen and (min-width: 390px) {
+        grid-template-columns: .2fr 1fr .5fr;
+        grid-template-rows: 1fr;
+    } */
+}
+
+.logo-boven {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 1em;
+    margin-left: 1.1em;
+    /* @media (min-width: 390px) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    } */
+}
+
+.ondertitel-logo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase; 
+    font-size: 10px;
+    margin-left: 1.5em;
+}
+
+.donatie-button {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-top: 1em;
+    /* @media (min-width: 390px) {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    } */
+}
+
+.tweede-navigatiebar {
+    background-color: #fff;
+    border: solid #E1E1E1 .5px;
+    margin-bottom: 5em;
+}
+
+.tweede-navigatiebar ul {
+    display: flex; /*Met display flex komen de items naast elkaar te staan. Tegen de ul wordt gezegd dat geflext moet worden */
+    justify-content: center; /*Hiermee wordt de content in het midden uitgelijnd*/
+    gap: 1em; /*Tussen de elementen is er een gap van 1em*/
+    list-style: none;
+}
+
+.tweede-navigatiebar a{
+    text-decoration: none;
+    color: black;
+    line-height: 2.5em;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+}
+
+/* CSS voor de section van de titel, ondertitel en artikelinformatie */
+
+main{
+    padding: 0 2em 0 9em; /*met de klok mee:*/
+    display: grid;
+    gap: 9em;
+
+}
+.section-titel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .5fr 1fr .5fr .5fr;
+}
+
+.info-artikel {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+h1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+h2{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.auteur {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+/* 
+.foto-frisdrank{
+    grid-column: 2/3;
+    grid-row: 1/5;
+} */
