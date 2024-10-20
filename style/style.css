@@ -97,16 +97,17 @@ body {
 
 /* CSS voor de section van de titel, ondertitel en artikelinformatie */
 
-main{
-    padding: 0 2em 0 9em; /*met de klok mee:*/
+main {
+    padding: 4em 5em 0 9em; /*met de klok mee:*/
     display: grid;
-    gap: 9em;
-
 }
+
 .section-titel{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr .5fr 1fr .5fr .5fr;
+    grid-template-rows: .2fr .5fr .5fr 1fr;
+    grid-template-columns: 2fr .2fr 1fr;
+    grid-column: 1/2;
+    /* background-color: #F4FBE9; */
 }
 
 .info-artikel {
@@ -114,22 +115,28 @@ main{
     grid-row: 1/2;
 }
 
-h1{
+h1 {
     grid-column: 1/2;
     grid-row: 2/3;
+    font-family: "Merriweather", serif;
+    font-size: 45px;  
+    margin-bottom: .125em;
 }
 
-h2{
+.ondertitel {
     grid-column: 1/2;
     grid-row: 3/4;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
 }
 
 .auteur {
     grid-column: 1/2;
     grid-row: 4/5;
 }
-/* 
-.foto-frisdrank{
-    grid-column: 2/3;
+
+.foto-frisdrank {
+    grid-column: 3/4;
     grid-row: 1/5;
-} */
+}
+
