@@ -71,10 +71,7 @@ body {
     grid-column: 3/4; /* De doneerknop bevindt zich in de derde kolom en eerste rij, met een marge aan de bovenkant */
     grid-row: 1/2;
     margin-top: 1em;
-    /* @media (min-width: 390px) {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    } */
+  
 }
 
 
@@ -117,13 +114,16 @@ main {
 .info-artikel {
     grid-column: 1/2; /* Artikelinformatie staat in de eerste kolom en rij */
     grid-row: 1/2;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(.3rem, 2.4vh, 1.4rem); 
+
 }
 
 h1 {
     grid-column: 1/2;
     grid-row: 2/3;
     font-family: "Merriweather", serif; 
-    font-size: 45px;  /* De titel heeft een groot lettertype van 45px, weergegeven in het 'Merriweather' serif-lettertype */
+    font-size: clamp(18px, 5vw, 45px); /* Stel de lettergrootte in op een minimum van 18px, een waarde van 5% van de viewport-breedte, en een maximum van 45px */
     margin-bottom: .125em;
 }
 
@@ -131,12 +131,15 @@ h1 {
     grid-column: 1/2;
     grid-row: 3/4;
     font-family: "Inter", sans-serif; /* De ondertitel wordt weergegeven in het Inter-lettertype, 16px groot */
-    font-size: 16px;
+    font-size: clamp(.3rem, 2.4vh, 1.4rem); 
 }
 
 .auteur {
     grid-column: 1/2; /* De auteur staat in de eerste kolom en vierde rij */
     grid-row: 4/5;
+    font-family: "Inter", sans-serif;
+    font-size: .9rem;
+
 }
 
 .foto-frisdrank {
@@ -144,3 +147,71 @@ h1 {
     grid-row: 1/5;
 }
 
+
+/* CSS (grid) voor de paragraph's en buttons*/
+.midden-text {
+    display: grid; /* Grid lay-out voor de sectie */
+    grid-template-columns: 1fr .8fr; /* Twee kolommen van gelijke breedte */
+    grid-template-rows: min-content 1fr; /* De eerste rij krijgt precies zoveel hoogte als nodig is om de inhoud te passen (min-content), en de tweede rij neemt de resterende ruimte in (1fr) */
+}
+
+/* opmaak voor de buttons 'artikel beluisteren, save, delen, tekst vergroten' */
+.buttons-artikelpagina {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    list-style-type:none;
+    display: flex; /*de buttons komen hierdoor naast elkaar te staan*/
+    gap: .5em; /*tussen de laatste buttons komt een gat van 0,5em*/
+    margin-bottom: 2em;
+}
+
+.buttons-artikelpagina li:nth-of-type(1) { /*Tegen de first child wordt gezegd dat de rest van de buttons opzij moeten schuiven naar rechts.*/
+    margin-right:auto; 
+}
+
+/* opmaak voor de eerste button */
+.artikel-beluisteren {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    padding: .5em;
+    appearance: none;
+    border: none;
+    border-radius: .125em;
+    background-color: #F9D4CF;
+    color: #AF726B;
+    cursor: pointer;
+}
+
+/* grid voor de  */
+.text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+/* Opmaakt voor de tekst in de paragrafen */
+.paragraaf { 
+    font-family: "Source Serif 4", serif; /* Het lettertype voor paragrafen */
+    font-size: clamp(14px, 2vw, 16px); /* De lettergrootte is minimaal 14px, maximaal 18px, en past zich dynamisch aan tussen deze waarden aan op basis van de viewport width (2vw) */    line-height: 1.7em;
+    margin-bottom: 1em;  /* Onderkantmarge van 1em voor ruimte tussen paragrafen */
+}
+
+.kopjes {
+    margin-top: 2.5em; /* Bovenkantmarge van 2.5em om ruimte te creëren boven kopjes */
+    margin-bottom: 1em;  /* Onderkantmarge van 1em voor ruimte onder kopjes */
+    font-family: "Source Serif 4", serif;
+}
+
+.quote {
+    margin-top: 4em; /* Grote bovenkantmarge van 4em om de quote te scheiden van de rest van de content */
+    margin-left: 2em; /* Linkermarge van 2em om de quote in te laten springen */
+    margin-right: 2em; /* Rechtermarge van 2em voor consistentie aan beide zijden */
+}
+
+.quote-text {
+    font-family: "Source Serif 4", serif; /* Hetzelfde lettertype voor de quote als de rest van de tekst */
+    font-size: 38px; /* Grotere lettergrootte van 38px voor de quotes */
+    margin-bottom: 1em; /* Onderkantmarge van 1em voor ruimte onder de quote-tekst */
+    max-width: 20em;  /* Maximale breedte van de quote-tekst */
+    letter-spacing: -1px; /* Vermindert de spatie tussen de letters*/
+}
