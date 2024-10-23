@@ -214,3 +214,316 @@ h1 {
     max-width: 20em;  /* Maximale breedte van de quote-tekst */
     letter-spacing: -1px; /* Vermindert de spatie tussen de letters*/
 }
+
+/* CSS voor doneer-kader */
+.kader-1 {
+    /* padding-right: 30em; --> padding-right verandert in max-width. Dit zou een responsive grid tegenwerken */
+    max-width: 39.5em;
+    padding-top: 2em;
+}
+
+
+.donatie-kader {
+    display: grid;
+    /* grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr; --> Ik kon hier beter grid-areas gebruiken, zie onderstaande regels */
+    grid-template-areas: 
+        "text text text text"
+        "bedrag-1 bedrag-2 bedrag-3 bedrag-4"
+        "anders anders anders anders";
+    border: solid #AF726B .125em; 
+    background-color: #F9D4CF;
+}
+
+
+.paragraaf-doneren {
+    /* grid-row: 1/2;
+    grid-column: 1/6; */
+    grid-area: text;
+    font-family: "Inter", sans-serif;
+    font-size: .9rem;
+    padding: 1em;
+    color: #E85340;
+    max-width: 42em;
+}
+
+.euro-5 {
+    grid-area: bedrag-1;
+}
+
+.euro-10 {
+    grid-area: bedrag-2;
+}
+
+.euro-20 {
+    grid-area: bedrag-3;
+}
+
+.euro-50 {
+    grid-area: bedrag-4;
+}
+
+.euro-anders {
+    grid-area: anders;
+}
+
+/* CSS voor de kader over de auteur*/
+.kader-2 {
+    /* padding-right: 30em; --> padding-right verandert in max-width. Dit zou een responsive grid tegenwerken*/ 
+    max-width: 39.5em;
+    padding-top: 2em;
+}
+
+.geschreven-door {
+    font-family: "Source Serif 4", serif;
+    font-size: 20px;
+}
+
+.auteur-2 {
+    border: solid #7B7B7A .125em;
+    display: grid;
+    grid-template-columns: 1fr 2fr .3fr;
+    grid-template-rows: .2fr .2fr .5fr .2fr .3fr;
+}
+
+.foto-auteur {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    padding-left: 1.6em;
+    padding-top: 1em;
+}
+
+.bekijk-profiel {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    cursor: pointer;
+}
+
+.madelief {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-family: "Source Serif 4", serif;
+    font-size: 20px;
+}
+
+.she {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-content: left;
+    color: #7B7B7A;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.p-eindredacteur {
+    grid-column: 2/3;
+    grid-row: 3/6;
+    font-family: "Inter", sans-serif;
+    color: #7B7B7A;
+  
+}
+
+.over-auteur {
+    grid-column: 2/4;
+    grid-row: 4/5;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: #444444;
+    font-size: .95rem;
+}
+
+/* Kaders voor eindredacteur en beeldredacteur */
+.redacteuren {
+    display: grid;
+    grid-template-columns: 19.3em 19.3em;
+    /* grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); */
+    margin-top: 2em;
+    gap: 1em;
+    padding-bottom: 10em;
+}
+
+.redacteur {
+    border: solid #7B7B7A .125em;
+    padding: 1em;
+    /* grid-column: 1/2; */
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    /* grid-template-rows: .2fr .5fr .5fr 1fr; */
+    grid-template-areas: 
+    "img naam button"
+    "img gender button"
+    "img functie button";
+    column-gap: 1em;
+    max-width: 20em;
+}
+
+.pasfoto {
+    /* grid-column: 1/2;
+    grid-row: 1/4; */
+    grid-area: img;
+    /* margin-left: 1.5em; */
+    align-self: center;
+}
+
+.naam {
+    /* grid-column: 2/3; */
+    font-family: "Source Serif 4", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    /* grid-row: 2/3; */
+    grid-area: naam;
+}
+
+.gender {
+    /* grid-column: 2/3; */
+    color: #7B7B7A;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    /* grid-row: 3/4; */
+    grid-area: gender;
+}
+
+.functie {
+    /* grid-column: 2/3; */
+    font-family: "Inter", sans-serif;
+    /* grid-row: 4/5; */
+    grid-area: functie;
+}
+
+.pijltje {
+    /* grid-column: 3/4;
+    grid-row: 3/4; */
+    grid-area: button;
+    align-self: center;
+}
+
+/* CSS voor aanbevolen artikelen */
+.meer-van-anna {
+    margin-bottom: 1em;
+    font-weight: 1000;
+    font-size: 1.2rem;
+}
+
+.meer-van {
+    display: grid;
+    grid-template-areas:
+    "k1 k2 k3"
+    "k4 k5 k6";
+    grid-template-columns: min-content min-content min-content;
+    gap: 1em;
+    cursor: pointer;
+}
+
+
+.meer-kader-1 {
+    grid-area: k1;
+    border: solid #7B7B7A .125em;
+}
+
+.meer-kader-2 {
+    grid-area: k2;
+    border: solid #7B7B7A .125em;
+}
+
+.meer-kader-3 {
+    grid-area: k3;
+    border: solid #7B7B7A .125em;
+}
+
+.meer-kader-4 {
+    grid-area: k4;
+    border: solid #7B7B7A .125em;
+}
+
+.meer-kader-5 {
+    grid-area: k5;
+    border: solid #7B7B7A .125em;
+}
+
+.meer-kader-6 {
+    grid-area: k6;
+    border: solid #7B7B7A .125em;
+}
+
+h5 {
+    font-family: "Source Serif 4", serif;
+    padding: .5em;
+}
+
+.door-schrijver {
+    font-family: "Inter", sans-serif;
+    color: #7B7B7A;
+    font-size: .8rem;
+    padding-top: 4em;
+}
+
+.meer-red {
+    font-weight: 1000;
+    font-size: 1.2rem;
+}
+
+footer ul{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 2fr;
+    list-style: none;
+}
+
+footer ul li a{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    line-height: 1.5em;
+}
+
+.image-footer {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 2.8em;
+    width: 12em;
+    margin-left: 4em;
+    margin-bottom: 2em;
+    margin-top: 4em;
+    cursor: pointer;
+}
+
+.rubrieken{
+    margin-left: 5rem;
+}
+
+.rubrics{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 5rem;
+}
+
+.navigation{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.service-2{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.more-redpers{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+
+.copyright{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    margin-left: 6em;
+}
