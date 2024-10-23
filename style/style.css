@@ -66,7 +66,7 @@ body {
 
 }
 
-.donatie-button {
+.button-voor-donation {
     grid-column: 3/4; /* De doneerknop bevindt zich in de derde kolom en eerste rij, met een marge aan de bovenkant */
     grid-row: 1/2;
     margin-top: 1em;
@@ -137,7 +137,7 @@ h1 {
     grid-column: 1/2; /* De auteur staat in de eerste kolom en vierde rij */
     grid-row: 4/5;
     font-family: "Inter", sans-serif;
-    font-size: .9rem;
+    font-size: .8rem;
 
 }
 
@@ -166,6 +166,14 @@ h1 {
 
 .buttons-artikelpagina li:nth-of-type(1) { /*Tegen de first child wordt gezegd dat de rest van de buttons opzij moeten schuiven naar rechts.*/
     margin-right:auto; 
+}
+
+.tools-voor-artikelpagina {
+    appearance: none; /*standaard layout gaat weg van de button*/
+    border: none;
+    border-radius: .125em;
+    padding: .5em;
+    cursor: pointer;
 }
 
 /* opmaak voor de eerste button */
@@ -247,23 +255,23 @@ h1 {
     max-width: 42em;
 }
 
-.euro-5 {
+.euro-vijf {
     grid-area: bedrag-1;
 }
 
-.euro-10 {
+.euro-tien {
     grid-area: bedrag-2;
 }
 
-.euro-20 {
+.euro-twintig {
     grid-area: bedrag-3;
 }
 
-.euro-50 {
+.euro-vijftig {
     grid-area: bedrag-4;
 }
 
-.euro-anders {
+.euro-ander-bedrag {
     grid-area: anders;
 }
 
