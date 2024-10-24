@@ -50,9 +50,6 @@ Inspiratie: https://www.newyorker.com/
 Visuele Hiërarchie en witruimte: https://github.com/fdnd-task/your-tribe-squad-page/blob/main/docs/visuele-hierarchie.md  
 
 
-## Licentie
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
-![image](https://github.com/user-attachments/assets/a516ec3d-e4a2-4b42-8487-a327127d35c5)
 ## Licentie
 This project is licensed under the terms of the [MIT license](./LICENSE).
