@@ -1,5 +1,5 @@
 # README voor All Human Accessible Websites
-De sprint "All Human Accessible Websites" is een initiatief gericht op het verbeteren van de toegankelijkheid van websites voor alle gebruikers, inclusief mensen met een beperking. Het primaire doel van dit project is om een uitgebreide lijst te bieden van websites die toegankelijk zijn voor mensen met verschillende handicaps. Door gebruik te maken van de WCAG-richtlijnen, willen we ervoor zorgen dat de inhoud van deze websites bruikbaar is voor iedereen.
+De sprint "All Human Accessible Websites" is gericht op het verbeteren van de toegankelijkheid van websites voor alle gebruikers, inclusief mensen met een beperking.  Door gebruik te maken van de WCAG-richtlijnen, zorg je ervoor dat de inhoud van websites bruikbaar is voor iedereen.
 
 Mijn webiste is hier te zien: [https://karima002.github.io/The-client-s-website/](https://karima002.github.io/all-human-accessible-websites-/)
 
@@ -23,8 +23,20 @@ In het kader van deze audit richt de site op de volgende aspecten:
 
 ## Voorbeelden van toegankelijkheid in de code
 
-De website is gebouwd met [HTML](#IDEX.html) en [CSS](#style.css).
+#### Alternatieve tekst voor afbeeldingen:
 
+WCAG 1.1.1: Het gebruik van alt-attributen voor afbeeldingen zorgt ervoor dat gebruikers met visuele beperkingen de inhoud begrijpen. De beschrijving moet relevant zijn voor de afbeelding.
+https://github.com/Karima002/all-human-accessible-websites-/blob/91a3caca87b8228fbd34e3af3ea68725718c956c/index.html#L41
+https://github.com/Karima002/all-human-accessible-websites-/blob/91a3caca87b8228fbd34e3af3ea68725718c956c/index.html#L73
+
+#### Navigatie via toetsenbord:
+
+WCAG 2.1.1: Zorgen dat alle interactieve elementen, zoals knoppen, toegankelijk zijn via het toetsenbord, is cruciaal voor gebruikers die geen muis kunnen gebruiken.
+https://github.com/Karima002/all-human-accessible-websites-/blob/91a3caca87b8228fbd34e3af3ea68725718c956c/index.html#L79-L84
+
+#### Structuur van de inhoud:
+WCAG 1.3.1: Het gebruik van kopjes en paragrafen maakt de inhoud logisch en begrijpelijk voor zowel gebruikers als assistieve technologieën. Dit helpt bij de navigatie en het scannen van de pagina.
+https://github.com/Karima002/all-human-accessible-websites-/blob/91a3caca87b8228fbd34e3af3ea68725718c956c/index.html#L70-L72
 
 ## BRONNEN
 Inspiratie: https://www.newyorker.com/  
