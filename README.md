@@ -38,12 +38,17 @@ https://github.com/Karima002/all-human-accessible-websites-/blob/91a3caca87b8228
 WCAG 1.3.1: Het gebruik van kopjes en paragrafen maakt de inhoud logisch en begrijpelijk voor zowel gebruikers als assistieve technologieën. Dit helpt bij de navigatie en het scannen van de pagina.
 https://github.com/Karima002/all-human-accessible-websites-/blob/91a3caca87b8228fbd34e3af3ea68725718c956c/index.html#L70-L72
 
-## BRONNEN
+## Layout website
+Het uiteindelijke resultaat van de website is er als volgt uit komen te zien:
+![image](https://github.com/user-attachments/assets/078ac6f5-75b7-494d-b07b-17a37bab7fe0)
+![image](https://github.com/user-attachments/assets/559f5537-8114-4cc1-b2ba-893402b97be3)
+
+
+
+## Bronnen
 Inspiratie: https://www.newyorker.com/  
 Visuele Hiërarchie en witruimte: https://github.com/fdnd-task/your-tribe-squad-page/blob/main/docs/visuele-hierarchie.md  
-CSS reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference  
-What is SVG and how to use it: https://developer.mozilla.org/en-US/docs/Web/SVG  
-Border in CSS: https://developer.mozilla.org/en-US/docs/Web/CSS/border
+
 
 ## Licentie
 
