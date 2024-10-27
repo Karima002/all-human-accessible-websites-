@@ -21,8 +21,8 @@ In het kader van deze audit richt de site op de volgende aspecten:
 - Duidelijke buttons: Duidelijke beschrijvingen en toegankelijke buttons
 
 ## Lighthouse test
-![image](https://github.com/user-attachments/assets/bd4d21cf-b260-4236-a867-de736331b0ca)
-Uit de lighthouse test kwam een percentage van 87% uit voor de toegankelijkheid. Je kan door de website tabben met de tab-toets. Verder leest de screenreader de interactieve elementen en tekst voor.
+![image](https://github.com/user-attachments/assets/e9032427-75de-475e-be59-05545a2bbf8f)
+Uit de lighthouse test kwam een percentage van 93% uit voor de toegankelijkheid. Je kan door de website tabben met de tab-toets. Verder leest de screenreader de interactieve elementen en tekst voor.
 ## Voorbeelden van toegankelijkheid in de code
 
 #### Alternatieve tekst voor afbeeldingen:
