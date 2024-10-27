@@ -251,16 +251,16 @@ h1 {
 .paragraaf-doneren {
     /* grid-row: 1/2;
     grid-column: 1/6; */
-    grid-area: text;
-    font-family: "Inter", sans-serif;
+    grid-area: text; /* Gebruikt de 'text'-area uit de grid-lay-out */
+    font-family: "Inter", sans-serif;  /* Bepaalt het lettertype van de tekst */
     font-size: .9rem;
-    padding: 1em;
+    padding: 1em;  /* Voegt ruimte toe rond de inhoud van 1em */
     color: #E85340;
-    max-width: 42em;
+    max-width: 42em; /* de maximale breedte van de tekst is 42em */
 }
 
 .euro-vijf {
-    grid-area: bedrag-1;
+    grid-area: bedrag-1;  /* Plaatst dit element in de 'bedrag-1'-grid-area */
     font-size: 1px;
 
 }
@@ -288,24 +288,24 @@ h1 {
 /* CSS voor de kader over de auteur*/
 .kader-2 {
     /* padding-right: 30em; --> padding-right verandert in max-width. Dit zou een responsive grid tegenwerken*/ 
-    max-width: 39.5em;
-    padding-top: 2em;
+    max-width: 39.5em;  /* de maximale breedte van dit element is 39.5em */
+    padding-top: 2em;  /* Voegt bovenruimte toe van 2em */
 }
 
 .geschreven-door {
-    font-family: "Source Serif 4", serif;
+    font-family: "Source Serif 4", serif; 
     font-size: 20px;
 }
 
 .auteur-2 {
-    border: solid #7B7B7A .125em;
+    border: solid #7B7B7A .125em; /* Voegt een solide rand toe van 0.125em in een grijze kleur */
     display: grid;
     grid-template-columns: 1fr 2fr .3fr;
     grid-template-rows: .2fr .2fr .5fr .2fr .3fr;
 }
 
 .foto-auteur {
-    grid-column: 1/2;
+    grid-column: 1/2; /* Plaatst foto in de eerste kolom van de grid */
     grid-row: 2/4;
     padding-left: 1.6em;
     padding-top: 1em;
@@ -316,14 +316,14 @@ h1 {
     grid-column: 1/2;
     padding-bottom: 2em;
     padding-left: 1em;
-    cursor: pointer;
+    cursor: pointer; /* Wijzigt de cursor naar een pointer bij hover, wat aangeeft dat het klikbaar is */
 }
 
 .madelief {
     grid-row: 2/3;
     grid-column: 2/3;
     font-family: "Source Serif 4", serif;
-    font-size: 20px;
+    font-size: 20px;  /* Bepaalt de lettergrootte op 20 pixels */
 }
 
 .she {
@@ -333,7 +333,7 @@ h1 {
     color: #7B7B7A;
     font-family: "Inter", sans-serif;
     font-size: 14px;
-    font-style: italic;
+    font-style: italic; /* Maakt de tekst cursief */
 }
 
 .p-eindredacteur {
@@ -348,9 +348,8 @@ h1 {
     grid-column: 2/4;
     grid-row: 4/5;
     font-family: "Inter", sans-serif;
-    font-size: 1rem;
     color: #444444;
-    font-size: .95rem;
+    font-size: .95rem;  /* Verkleint de lettergrootte naar 0.95 rem*/
 }
 
 /* Kaders voor eindredacteur en beeldredacteur */
@@ -422,14 +421,14 @@ h1 {
 /* CSS voor aanbevolen artikelen */
 .meer-van-anna {
     margin-bottom: 1em;
-    font-weight: 1000;
-    font-size: 1.2rem;
+    font-weight: 1000;     /* Stelt het lettertype in op extra dik (1000) */
+    font-size: 1.2rem; /* Bepaalt de lettergrootte op 1.2 rem*/
 }
 
 .meer-van {
     display: grid;
-    grid-template-areas:
-    "k1 k2 k3"
+    grid-template-areas: /* Definieert de areas in de grid voor de verschillende elementen */
+    "k1 k2 k3"  /* Eerste rij van de grid met drie areas */
     "k4 k5 k6";
     grid-template-columns: min-content min-content min-content;
     gap: 1em;
@@ -438,7 +437,7 @@ h1 {
 
 
 .meer-kader-1 {
-    grid-area: k1;
+    grid-area: k1; /* Plaatst dit element in de 'k1'-grid-area */
     border: solid #7B7B7A .125em;
 }
 
